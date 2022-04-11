@@ -1,0 +1,23 @@
+.main-div {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f1f7;
+    padding: 2rem;
+}
+
+.main-div .technologies {
+    display:  flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 5rem;
+}
+
+.main-div .technologies img {
+    width: 10%;
+
+
+}

@@ -2,6 +2,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import asabenehImage from './images/asabeneh.jpg'
+import AllCss from './AllCss.css'
+import CssImage from './images/css_logo.png'
+import HtmlImage from './images/html_logo.png'
+import JsImage from './images/js_logo.png'
+import ReactImage from './images/react_logo.png'
 
 const hexaColor = () => {
   let str = '0123456789abcdef'
@@ -96,12 +101,27 @@ const Footer = () => (
   </footer>
 )
 
+// Front End Technologies
+const FirstChallange = function(props) {
+  const langageArray = [HtmlImage, CssImage, JsImage, ReactImage]; 
+  const mapImages = langageArray.map( items => <img src={items}></img>)
+  return (
+    <div className='main-div'>
+      <h2>Front End Technologies</h2>
+      <div className='technologies' alt="image of a programming language I know ">
+        {mapImages}
+      </div>
+    </div>
+  )
+}
+
 // The App, or the parent or the container component
 const App = () => (
   <div className='app'>
-    <Header />
+    {/* <Header />
     <Main />
-    <Footer />
+    <Footer /> */}
+  <FirstChallange />
   </div>
 )
 
